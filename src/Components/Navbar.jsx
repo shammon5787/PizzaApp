@@ -2,7 +2,7 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <nav className='flex flex-col lg:flex-row justify-between'>
+    <nav className='flex flex-col lg:flex-row justify-between py-3 mx-6 mb-10'>
      <div>
         <h2 className='text-xl font-bold text-gray-700'>{new Date().toUTCString().slice(0,16)}</h2>
         <h2 className='text-2xl font-bold'>G_B PIZZA FAST FOOD CENTER</h2>
