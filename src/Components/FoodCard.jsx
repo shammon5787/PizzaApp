@@ -14,7 +14,7 @@ const FoodCard = ({name, price, image, ratting, desc}) => {
         </div>
         <p className='font-normal text-lg'>{desc}</p>
         <div className='flex flex-row items-center justify-between'>
-            <span className='flex items-center'><FaStar className='text-yellow-400 mr-2'/> 4{ratting}</span>
+            <span className='flex items-center'><FaStar className='text-yellow-400 mr-2'/>{ratting}</span>
             <button className='p-1 text-white bg-green-800 hover:text-blue-800 hover:bg-black font-thin rounded-md'>Add To Card</button>
         </div>
     </div>

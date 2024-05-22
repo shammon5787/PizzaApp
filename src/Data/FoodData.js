@@ -25,98 +25,112 @@ const FoodData = [
         name: "Food One" ,
         image: img1,
         price: 23.5,
-        desc: "ultimate step in avoiding periodic"
+        desc: "ultimate step in avoiding periodic",
+        ratting: 3
     },
     {
         id: 2,
         name: "Food Two" ,
         image: img2,
         price: 23.5,
-        desc: "ultimate step in avoiding periodic"
+        desc: "ultimate step in avoiding periodic",
+        ratting: 3.5
     },
     {
         id: 3,
         name: "Food Three" ,
         image: img3,
         price: 23.5,
-        desc: "ultimate step in avoiding periodic"
+        desc: "ultimate step in avoiding periodic",
+        ratting: 4
     },
     {
         id: 4,
         name: "Food Four" ,
         image: img4,
         price: 23.5,
-        desc: "ultimate step in avoiding periodic"
+        desc: "ultimate step in avoiding periodic",
+        ratting: 4.5
     },
     {
         id: 5,
         name: "Food One" ,
         image: img5,
         price: 23.5,
-        desc: "ultimate step in avoiding periodic"
+        desc: "ultimate step in avoiding periodic",
+        ratting: 5
     },
     {
         id: 6,
         name: "Food One" ,
         image: img6,
         price: 23.5,
-        desc: "ultimate step in avoiding periodic"
+        desc: "ultimate step in avoiding periodic",
+        ratting: 2
     },
     {
         id: 7,
         name: "Food One" ,
         image: img7,
         price: 23.5,
-        desc: "ultimate step in avoiding periodic"
+        desc: "ultimate step in avoiding periodic",
+        ratting: 5
     },
     {
         id: 8,
         name: "Food One" ,
         image: img8,
         price: 23.5,
-        desc: "ultimate step in avoiding periodic"
+        desc: "ultimate step in avoiding periodic",
+        ratting: 4.5
     },
     {
         id: 9,
         name: "Food One" ,
         image: img9,
         price: 23.5,
-        desc: "ultimate step in avoiding periodic"
+        desc: "ultimate step in avoiding periodic",
+        ratting: 4.32
     },
     {
         id: 10,
         name: "Food One" ,
         image: img10,
         price: 23.5,
-        desc: "ultimate step in avoiding periodic"
+        desc: "ultimate step in avoiding periodic",
+        ratting: 3
     },
     {
         id: 11,
         name: "Food One" ,
         image: img11,
         price: 23.5,
-        desc: "ultimate step in avoiding periodic"
+        desc: "ultimate step in avoiding periodic",
+        ratting: 3.4
     },
     {
         id: 12,
         name: "Food One" ,
         image: img12,
         price: 23.5,
-        desc: "ultimate step in avoiding periodic"
+        desc: "ultimate step in avoiding periodic",
+        ratting: 3.4
     },
     {
         id: 13,
         name: "Food One" ,
         image: img13,
         price: 23.5,
-        desc: "ultimate step in avoiding periodic"
+        desc: "ultimate step in avoiding periodic",
+        ratting: 5
     },
     {
         id: 14,
         name: "Food One" ,
         image: img14,
         price: 23.5,
-        desc: "ultimate step in avoiding periodic"
+        desc: "ultimate step in avoiding periodic",
+        ratting: 3.5
     },
     {
         id: 15,
@@ -124,7 +138,7 @@ const FoodData = [
         image: img15,
         price: 23.5,
         desc: "ultimate step in avoiding periodic",
-        ratting : 4.23
+        ratting : 3.23
     },
     {
         id: 16,
