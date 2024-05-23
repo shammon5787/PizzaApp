@@ -8,8 +8,8 @@ const FoodItem = () => {
         <div  className='gap-3 flex flex-wrap items-center justify-center'>
             {
                 item.map((myiems) => (
-                    <div>
-                        <FoodCard key={myiems.id} id = {myiems.id} name = {myiems.name} price ={myiems.price} image = {myiems.image} ratting = {myiems.ratting} desc = {myiems.desc} />
+                    <div key={myiems.id}>
+                        <FoodCard id = {myiems.id} name = {myiems.name} price ={myiems.price} image = {myiems.image} ratting = {myiems.ratting} desc = {myiems.desc} />
                     </div>
                 ))
             }
