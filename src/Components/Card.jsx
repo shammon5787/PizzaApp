@@ -8,12 +8,11 @@ const Card = () => {
     console.log(selecter)
 
     return (
-        <div className="fixed right-0 top-0 w-full lg:w-[20vw] h-full bg-cyan-50 p-5">
+        <div className="fixed right-0 top-0 w-full lg:w-[20vw] h-full bg-cyan-50 p-5 ">
             <div className='flex justify-between items-center'>
                 <span className='font-bold text-xl'>My Order</span>
                 <IoIosClose className='border border-gray-600 m-1 cursor-pointer rounded-lg hover:border-red-500 hover:text-red-600 font-bold' />
             </div>
-            <ItemCard />
             <ItemCard />
             <div className='absolute bottom-0'>
                 <h3>Items: </h3>

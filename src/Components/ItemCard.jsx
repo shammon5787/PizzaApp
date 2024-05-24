@@ -6,25 +6,31 @@ import { MdDelete } from "react-icons/md";
 import { useSelector } from 'react-redux';
 const ItemCard = () => {
 
-    const selectitem = useSelector((state)=>state.cart)
+    const selectitem = useSelector((state) => state.cart)
 
     return (
-        <div className=' leading-tight bg-cyan-100 mt-2 p-2 rounded-md'>
-            <div className='flex items-center justify-between'>
-                <img className="rounded-full w-[40px] h-[40px] " src={img1} alt="" />
-                <div>
-                    <h2>Onion Pizza</h2>
-                </div>
-                <MdDelete className='right-4'/>
-            </div>
-            <div className='flex items-center justify-between'>
-                <h2>$: 30</h2>
-                <div>
-                    <span className='flex gap-3 items-center'>
-                        <FaPlus className='border border-gray-500 rounded-md cursor-pointer' /> 1 {selectitem.length}  <FaMinus className='border border-gray-500 rounded-md cursor-pointer' />
-                    </span>
-                </div>
-            </div>
+        <div className=' leading-tight'>
+            {
+                selectitem.map((selitm) => (
+                    <div className='bg-cyan-100 p-2  rounded-md mt-1'>
+                        <div className='flex items-center justify-between '>
+                            <img className="rounded-full w-[40px] h-[40px] " src={selitm.image} alt="" />
+                            <div>
+                                <h2>{selitm.name}</h2>
+                            </div>
+                            <MdDelete className='right-4' />
+                        </div>
+                        <div className='flex items-center justify-between'>
+                            <h2>$: {selitm.price}</h2>
+                            <div>
+                                <span className='flex gap-3 items-center'>
+                                    <FaPlus className='border border-gray-500 rounded-md cursor-pointer' /> 1  <FaMinus className='border border-gray-500 rounded-md cursor-pointer' />
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                ))
+            }
         </div>
     )
 }
