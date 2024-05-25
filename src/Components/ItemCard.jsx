@@ -3,10 +3,19 @@ import img1 from '../Food/1.avif'
 import { FaPlus } from "react-icons/fa";
 import { FaMinus } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { remove } from '../Store/CardSlice';
 const ItemCard = () => {
 
     const selectitem = useSelector((state) => state.cart)
+    const dispetch = useDispatch()
+
+
+
+
+    // const removeFromCard = (item)=>{
+    //     dispetch(remove(item))
+    // }
 
     return (
         <div className=' leading-tight'>
@@ -18,13 +27,13 @@ const ItemCard = () => {
                             <div>
                                 <h2>{selitm.name}</h2>
                             </div>
-                            <MdDelete className='right-4' />
+                            <MdDelete onClick={()=>dispetch({id, name,image, price})} className='right-4 cursor-pointer' />
                         </div>
                         <div className='flex items-center justify-between'>
                             <h2>$: {selitm.price}</h2>
                             <div>
                                 <span className='flex gap-3 items-center'>
-                                    <FaPlus className='border border-gray-500 rounded-md cursor-pointer' /> 1  <FaMinus className='border border-gray-500 rounded-md cursor-pointer' />
+                                    <FaPlus className='border border-gray-500 rounded-md cursor-pointer' /> {selitm.qnty}  <FaMinus className='border border-gray-500 rounded-md cursor-pointer' />
                                 </span>
                             </div>
                         </div>

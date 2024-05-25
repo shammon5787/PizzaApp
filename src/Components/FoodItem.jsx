@@ -5,7 +5,7 @@ import FoodData from '../Data/FoodData'
 const FoodItem = () => {
     const [item, setitem] = useState(FoodData)
     return (
-        <div  className='gap-3 flex flex-wrap items-center justify-center'>
+        <div  className='gap-3 flex flex-wrap items-center justify-center pb-14'>
             {
                 item.map((myiems) => (
                     <div key={myiems.id}>
